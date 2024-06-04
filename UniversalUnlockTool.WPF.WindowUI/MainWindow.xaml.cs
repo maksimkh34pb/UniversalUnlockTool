@@ -23,7 +23,7 @@ namespace UniversalUnlockTool.WPF.WindowUI
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            // Environment.Exit(0);
+            Environment.Exit(0);
         }
     }
 }

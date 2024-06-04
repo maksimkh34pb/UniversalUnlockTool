@@ -9,6 +9,10 @@ namespace UniversalUnlockTool.WPF.WindowUI
     /// </summary>
     public partial class App : Application
     {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            Models.LanguageSystem.Startup();
+        }
     }
 
 }

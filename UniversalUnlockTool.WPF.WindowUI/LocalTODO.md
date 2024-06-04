@@ -1,1 +1,2 @@
-# ComboBoxStyle
+* ComboBoxStyle
+* ExceptionHandler для всего приложения

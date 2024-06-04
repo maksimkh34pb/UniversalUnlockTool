@@ -22,5 +22,21 @@
                     HorizontalAlignment="Stretch"
                     Header="Universal Unlock Tool" 
                     DockPanel.Dock="Top"/>
+        <Menu DockPanel.Dock="Top" 
+              VerticalAlignment="Top" 
+              Style="{DynamicResource ThemedMenu}"
+              Height="24">
+            <MenuItem Header="{DynamicResource mm_File}" 
+                      Style="{DynamicResource ThemedMenuItem}">
+                <MenuItem Header="{DynamicResource mm_File_settings}"
+                          Style="{DynamicResource ThemedMenuItem}"
+                          Click="MenuItem_Click">
+                    
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            
+        </Grid>
     </DockPanel>
 </Window>
