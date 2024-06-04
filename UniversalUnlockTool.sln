@@ -3,7 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{C9581982-81BD-4EA8-A1C4-7186CC8E4B93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{8E59A4AE-D5DD-4FF6-BC8A-9B8171CDE380}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinuxUI", "LinuxUI", "{D3A614B6-0CEC-4DB3-9114-A9A3C1B0DA06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{A8F964A0-C4DC-4BF8-A298-CE9B6B7779DD}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalUnlockTool.WPF.WindowUI", "UniversalUnlockTool.WPF.WindowUI\UniversalUnlockTool.WPF.WindowUI.csproj", "{15DFD414-A7D6-4F37-B607-2BDBB6B64E65}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15DFD414-A7D6-4F37-B607-2BDBB6B64E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DFD414-A7D6-4F37-B607-2BDBB6B64E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15DFD414-A7D6-4F37-B607-2BDBB6B64E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15DFD414-A7D6-4F37-B607-2BDBB6B64E65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
