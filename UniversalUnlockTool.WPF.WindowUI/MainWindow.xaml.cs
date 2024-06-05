@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Security.Policy;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -24,6 +27,12 @@ namespace UniversalUnlockTool.WPF.WindowUI
         private void Window_Closed(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            Process.Start("explorer", e.Uri.AbsoluteUri);
+            e.Handled = true;
         }
     }
 }

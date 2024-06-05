@@ -29,6 +29,7 @@
         <Style.Setters>
             <Setter Property="Background" Value="{StaticResource SCBBlueBackground}"/>
             <Setter Property="Foreground" Value="{StaticResource SCBForeground}"/>
+            <Setter Property="Height" Value="26"/>
             <Setter Property="FontFamily" Value="Manrope SemiBold"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -127,5 +128,15 @@
         <Setter Property="BorderBrush" Value="{DynamicResource SCBBorder}"/>
     </Style>
 
+    <Style x:Key="ThemedTextBox" TargetType="TextBox">
+        <Style.Setters>
+            <Setter Property="Background" Value="{StaticResource SCBDarkBackground}"/>
+            <Setter Property="Foreground" Value="{StaticResource SCBForeground}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource SCBBorder}"/>
+            <Setter Property="FontFamily" Value="Manrope SemiBold"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="3"/>
+        </Style.Setters>
+    </Style>
 
 </ResourceDictionary>

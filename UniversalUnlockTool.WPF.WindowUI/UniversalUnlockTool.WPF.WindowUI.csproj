@@ -19,7 +19,9 @@
     <None Remove="Assets\Fonts\static\Manrope-Regular.ttf" />
     <None Remove="Assets\Fonts\static\Manrope-SemiBold.ttf" />
     <None Remove="Assets\Icons\CloseIcon.png" />
+    <None Remove="Assets\Icons\UUTLogo.png" />
     <None Remove="UserControls\MinimizeIcon.png" />
+    <None Remove="UserControls\TitleBar\RestoreIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,14 +49,20 @@
     <Resource Include="Assets\Fonts\static\Manrope-SemiBold.ttf">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Assets\Icons\UUTLogo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="UserControls\TitleBar\CloseIcon.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="UserControls\TitleBar\MinimizeIcon.png" />
+    <Resource Include="UserControls\TitleBar\RestoreIcon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\Icons\" />
+    <ProjectReference Include="..\UniversalUnlockTool.Model\UniversalUnlockTool.Model.csproj" />
   </ItemGroup>
 
 </Project>

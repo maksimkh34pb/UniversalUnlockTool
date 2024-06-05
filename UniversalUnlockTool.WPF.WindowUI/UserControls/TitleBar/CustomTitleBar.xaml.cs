@@ -65,6 +65,24 @@ namespace UniversalUnlockTool.WPF.WindowUI.UserControls
         public static readonly DependencyProperty CanMinimizeProperty =
             DependencyProperty.Register("CanMinimize", typeof(bool), typeof(CustomTitleBar), new PropertyMetadata(true));
 
+        public int DefaultHeight
+        {
+            get => (int)GetValue(DefaultHeightProperty);
+            set => SetValue(DefaultHeightProperty, value);
+        }
+
+        public static readonly DependencyProperty DefaultHeightProperty =
+            DependencyProperty.Register("DefaultHeight", typeof(int), typeof(CustomTitleBar), new PropertyMetadata(400));
+
+        public int DefaultWidth
+        {
+            get => (int)GetValue(DefaultWidthtProperty);
+            set => SetValue(DefaultWidthtProperty, value);
+        }
+
+        public static readonly DependencyProperty DefaultWidthtProperty =
+            DependencyProperty.Register("DefaultWidth", typeof(int), typeof(CustomTitleBar), new PropertyMetadata(600));
+
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
@@ -73,6 +91,12 @@ namespace UniversalUnlockTool.WPF.WindowUI.UserControls
             {
                 Minimize_CustomTitleBarButton.Visibility = Visibility.Collapsed;
             }
+        }
+
+        private void RestoreSize_CustomTitleBarClick(object sender, RoutedEventArgs e)
+        {
+            ParentWindow.Width = DefaultWidth;
+            ParentWindow.Height = DefaultHeight;
         }
     }
 }

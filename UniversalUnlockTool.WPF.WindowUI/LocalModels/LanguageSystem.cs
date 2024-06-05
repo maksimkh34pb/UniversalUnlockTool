@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 using System.Windows;
 
-namespace UniversalUnlockTool.WPF.WindowUI.Models
+namespace UniversalUnlockTool.WPF.WindowUI.LocalModels
 {
     internal class LanguageSystem
     {
@@ -52,9 +47,9 @@ namespace UniversalUnlockTool.WPF.WindowUI.Models
 
                 ResourceDictionary? oldDict = null;
 
-                foreach(var _dict in Application.Current.Resources.MergedDictionaries)
+                foreach (var _dict in Application.Current.Resources.MergedDictionaries)
                 {
-                    if(_dict.Source.ToString().StartsWith("/Resources/Lang."))
+                    if (_dict.Source.ToString().StartsWith("/Resources/Lang."))
                     {
                         oldDict = _dict;
                         break;

@@ -2,5 +2,17 @@
                     xmlns:v="clr-namespace:System;assembly=mscorlib"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <v:String x:Key="mm_File">Файл</v:String>
-    <v:String x:Key="mm_File_settings">Настройки</v:String>
+    <v:String x:Key="mm_Scripts">Скрипты</v:String>
+    <v:String x:Key="mm_Fastboot">Fastboot</v:String>
+
+
+    <v:String x:Key="mm_File_Settings">Параметры</v:String>
+
+    <v:String x:Key="mm_Scripts_New">Новый скрипт</v:String>
+    <v:String x:Key="mm_Scripts_Edit">Редактировать</v:String>
+    <v:String x:Key="mm_Scripts_Execute">Выполнить</v:String>
+
+    <v:String x:Key="mm_Fastboot_Flash">Прошить</v:String>
+    <v:String x:Key="mm_Fastboot_Reboot">Перезагрузить</v:String>
+    <v:String x:Key="mm_Fastboot_CheckBLStatus">Проверить статус загрузчика</v:String>
 </ResourceDictionary>

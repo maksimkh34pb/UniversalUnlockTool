@@ -18,6 +18,15 @@
                        Text="{Binding Header, RelativeSource={RelativeSource AncestorType=UserControl}}"
                        HorizontalAlignment="Left"></TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Click="RestoreSize_CustomTitleBarClick" 
+                        x:Name="RestoreSize_CustomTitleBar" 
+                        Height="20" 
+                        Width="20" Margin="2,2,5,2"
+                        Style="{DynamicResource ThemedButton}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="RestoreIcon.png"/>
+                    </Button.Background>
+                </Button>
                 <Button  Click="Minimize_CustomTitleBarClick" 
                          x:Name="Minimize_CustomTitleBarButton" 
                          Margin="2,2,4,2" Height="20" 
@@ -29,14 +38,15 @@
 
                 </Button>
                 <Button Click="Close_CustomTitleBarClick" 
-                        x:Name="Close_CustomTitleBar" 
-                        Height="20" 
-                        Width="20" Margin="2,2,5,2"
-                        Style="{DynamicResource ThemedButton}">
+        x:Name="Close_CustomTitleBar" 
+        Height="20" 
+        Width="20" Margin="2,2,5,2"
+        Style="{DynamicResource ThemedButton}">
                     <Button.Background>
                         <ImageBrush ImageSource="CloseIcon.png"/>
                     </Button.Background>
                 </Button>
+                
             </StackPanel>
         </Grid>
     </Border>
